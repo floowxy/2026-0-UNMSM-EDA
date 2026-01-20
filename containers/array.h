@@ -4,7 +4,7 @@
 class CArray{
 private:
     int  m_size;
-    // int* m_data;
+    int  m_data[100]; // Fixed size for simplicity;
 public:
     CArray(int size);
     ~CArray();

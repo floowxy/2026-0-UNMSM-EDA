@@ -11,9 +11,7 @@ CArray::~CArray(){
 }
 
 int& CArray::operator[](int index){
-    // return m_data[index];
-    static int dummy = 0;
-    return dummy;
+    return m_data[index];
 }
 
 int CArray::getSize() const {
@@ -22,11 +20,10 @@ int CArray::getSize() const {
 
 
 void DemoArray(){
-    CArray arr1(5);
+    CArray arr1(10);
     for(int i = 0; i < arr1.getSize(); ++i)
         arr1[i] = i * 10;
 
     for(int i = 0; i < arr1.getSize(); ++i)
         cout << arr1[i] << endl;
-    
 }
